@@ -32,7 +32,7 @@ function createButtons() {
 
 function getGif(search) {
     search = search.replace(/ /g,"+");
-    var hotdog = $.get("http://api.giphy.com/v1/gifs/search?q=" + search + "&api_key=JvCSxxvKPyChJ9V1dVDFvmYmGlm6UuEn&limit=10");
+    var hotdog = $.get("https://api.giphy.com/v1/gifs/search?q=" + search + "&api_key=JvCSxxvKPyChJ9V1dVDFvmYmGlm6UuEn&limit=10");
     hotdog.done(function(data) { 
         var results = data["data"];
         for(var i=0; i<10; i++) {
